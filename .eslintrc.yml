@@ -1,0 +1,16 @@
+env:
+  node: true
+  es2021: true
+  mocha: true
+  jest: true
+extends:
+  - airbnb-base
+parserOptions:
+  ecmaVersion: 12
+  sourceType: module
+plugins: ["filenames", "classes"]
+rules:
+  {
+    "filenames/match-exported": [2, "camel"],
+    "classes/name": [2, "class", "method"],
+  }
